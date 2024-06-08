@@ -1,13 +1,14 @@
 
 import './styles/App.css'
-import { Header, Main} from './components'
+import {Main} from './pages'
+import { Header } from './components'
 
 
 function App() {
 
   return (
     <>
-      <Header />
+      <Header/>
       <Main />
     </>
   )

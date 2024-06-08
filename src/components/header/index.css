@@ -1,3 +1,33 @@
 .header{
     width: 100%;
+    height: var(--header-height);
+    backdrop-filter: blur(5px);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
 }
+.navigation{
+    max-width: var(--max-width);
+    padding: var(--main-padding);
+    margin: 0 auto;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.icon{
+    width : var(--icon-size);
+    height: var(--icon-size);
+    margin-right: var(--main-padding);
+    padding: var(--main-padding);
+    cursor: pointer;
+}
+
+.icon:hover>.eye{
+    r : 10;
+    transition: var(--transition);
+}
+
