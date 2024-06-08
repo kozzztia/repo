@@ -1,9 +1,12 @@
 #root {
-  max-width: 1280px;
+  max-width: var(--max-width);
   min-height: 100vh;
+  height: auto;
   margin: 0 auto;
+  padding-top: var(--header-height);
   display: flex;
   flex-direction: column;
   align-items: stretch;
   justify-content: space-between;
+  position: relative;
 }
