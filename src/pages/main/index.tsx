@@ -2,7 +2,6 @@ import { useEffect, useLayoutEffect, useState } from 'react';
 import './index.css';
 import { getCoins } from '../../utils/getCoins';
 import { Header, SearchModal } from '../../components';
-import { dictionary } from '../../dictionary';
 
 const Main = () => {
   const apiUrl = import.meta.env.VITE_API_URL;
