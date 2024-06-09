@@ -1,0 +1,106 @@
+
+.search-modal{
+    backdrop-filter: blur(1px);
+    background-color: inherit;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    border: none;
+
+}
+.modal-content{
+    margin: var(--header-height) auto;
+    margin-bottom: auto;
+    width: 50vh;
+    height: auto;
+    max-height: 50vw;
+    border: var(--text-color) 1px solid;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-between;
+    overflow-y: auto;
+    padding: var(--main-padding);
+}
+
+.modal-form{
+    position: sticky;
+    height: var(--header-height/2);
+    width :100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: var(--main-padding);
+    gap: var(--main-padding);
+}
+
+.modal-input{
+  width: 100%;
+  max-width :200px;
+  height: var(--main-size);
+  padding: var(--element-padding) calc(var(--element-padding)*2);
+  border-radius: var(--radius);
+  border: none;
+  outline: none;
+  font-size: var(--element-text-size);
+}
+.modal-button{
+  height: var(--main-size);
+  width: var(--main-size);
+  padding: var(--element-padding);
+  transition: var(--transition);
+  cursor: pointer;
+  border-radius: var(--radius);
+  border: none;
+  outline: none;
+}
+.modal-button:hover{
+  background-color: var(--contrast-color);
+}
+.modal-button:hover>.scope>.color{
+  fill: var(--text-color)
+}
+
+
+.modal-list{
+  flex:1;
+  height: 100%;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: space-between;
+  gap: var(--element-padding);
+  font-size: var(--element-text-size);
+  color: var(--text-color)
+}
+.modal-list::-webkit-scrollbar {
+    width: .5rem; 
+  }
+  
+  .modal-list::-webkit-scrollbar-track {
+    background: inherit; 
+  }
+  
+  .modal-list::-webkit-scrollbar-thumb {
+    background-color: var(--text-color);   
+    cursor: pointer;
+  }
+
+  .modal-item{
+    padding: var(--element-padding) calc(var(--element-padding)*2);
+    transition: var(--transition);
+    cursor: pointer;
+    border-bottom: 1px solid var(--text-color);
+  }
+  .modal-item:hover{
+    color: var(--icon-color);
+    text-shadow: 0 0 5px var(--contrast-color);
+  }
+

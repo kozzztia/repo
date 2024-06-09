@@ -2,11 +2,11 @@
     position: relative;
     width: 100%;
     height: calc(100vh - var(--header-height));
-    padding: var(--main-padding) 0 var(--main-padding) var(--main-padding);
+    padding: 0 0 var(--main-padding) var(--main-padding);
     overflow-y: auto;
 }
 .main::-webkit-scrollbar {
-    width: var(--main-padding); 
+    width: .5rem; 
   }
   
   .main::-webkit-scrollbar-track {
@@ -14,14 +14,8 @@
   }
   
   .main::-webkit-scrollbar-thumb {
-    background-color: var(--icon-color); 
-    border-radius: var(--radius); 
-    border: 1px solid var(--icon-color); 
+    background-color: var(--text-color);   
     cursor: pointer;
-  }
-
-  .coin-list{
-
   }
   .coin{
     font-size: var(--main-size);
