@@ -78,7 +78,8 @@
   justify-content: space-between;
   gap: var(--element-padding);
   font-size: var(--element-text-size);
-  color: var(--text-color)
+  color: var(--text-color);
+  background: var(--main-bg-color);
 }
 .modal-list::-webkit-scrollbar {
     width: .5rem; 
