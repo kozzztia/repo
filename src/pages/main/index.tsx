@@ -2,6 +2,7 @@ import { useEffect, useLayoutEffect, useState } from 'react';
 import './index.css';
 import { getCoins } from '../../utils/getCoins';
 import { Header, SearchModal } from '../../components';
+import { getText } from '../../utils/getText';
 
 const Main = () => {
   const apiUrl = import.meta.env.VITE_API_URL;
@@ -33,6 +34,10 @@ const Main = () => {
   return (
     <>
       <Header handler={setOpenPopUp} />
+
+      {
+        filter?.length ? <h1 className='searched'>{getText('searched')} {filteredCoins.length} {getText('search')}</h1> : <h1 className='searched'>{getText('search')}</h1>
+      }
       <main className="main">
         <ul className="coin-list">
           {filteredCoins.map((coin) => (
@@ -40,6 +45,7 @@ const Main = () => {
           ))}
         </ul>
       </main>
+
       <SearchModal 
         isOpen={openPopUp}
         setIsOpen={setOpenPopUp}  
