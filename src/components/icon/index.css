@@ -1,0 +1,18 @@
+
+
+.icon{
+    width : var(--icon-size);
+    height: var(--icon-size);
+    transition: var(--transition);
+}
+.circle{
+    fill: var(--icon-color);
+    transition: var(--transition);
+}
+
+.icon:hover>.circle{
+    fill:var(--contrast-color);
+}
+.icon:hover{
+        transform: rotate(360deg);
+}

@@ -8,6 +8,7 @@
     display: flex;
     align-items: stretch;
     justify-content: center;
+
 }
 .navigation{
     max-width: var(--max-width);
@@ -18,16 +19,12 @@
     align-items: center;
     justify-content: flex-start;
 }
-.icon{
-    width : var(--icon-size);
-    height: var(--icon-size);
-    margin-right: var(--main-padding);
-    padding: var(--main-padding);
-    cursor: pointer;
+.title{
+    font-size: var(--main-size);
+    color: var(--text-color);
+    padding : 0 var(--main-padding);
+    text-transform: capitalize;
+    user-select: none;
 }
 
-.icon:hover>.eye{
-    r : 10;
-    transition: var(--transition);
-}
 

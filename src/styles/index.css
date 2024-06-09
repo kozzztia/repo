@@ -3,17 +3,19 @@
   --font-family: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Oxygen", Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   --font-weight: 400;
   --font-size: 10px;
-  --main-size: 1.8rem;
+  --main-size: 2rem;
+  --element-text-size: 1.2rem;
+  --element-padding: .2rem;
   --main-padding: 1rem;
   --max-width: 1980px;
-  --header-height: 10rem;
+  --header-height: 6rem;
   --main-bg-color: #000804;
   --text-color: #e0e0e0;
   --icon-color: #fff50f;
-  --icon-size: 8rem;
   --contrast-color: #5252ff;
+  --icon-size: 3rem;
   --transition: .2s;
-  --radius: 1rem;
+  --radius: .5rem;
 }
 
 * {
@@ -21,18 +23,20 @@
   padding: 0;
   box-sizing: border-box;
   /* For debugging */
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
 }
-
+li{
+  list-style-type: none;
+}
 body {
   font-family: var(--font-family);
   font-weight: var(--font-weight);
   font-size: 1.8rem;
   color: var(--text-color);
   width: 100vw;
+  display: block;
   min-height: 100vh;
-  position: relative;
+  position: absolute;
   background-color: var(--main-bg-color);
   overflow: hidden;
 };
-
