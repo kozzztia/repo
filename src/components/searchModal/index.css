@@ -16,7 +16,7 @@
     margin-bottom: auto;
     width: 50vh;
     height: auto;
-    max-height: 50vw;
+    max-height: 70vh;
     border: var(--text-color) 1px solid;
     position: relative;
     display: flex;
@@ -98,6 +98,7 @@
     transition: var(--transition);
     cursor: pointer;
     border-bottom: 1px solid var(--text-color);
+    user-select: none;
   }
   .modal-item:hover{
     color: var(--icon-color);
