@@ -100,9 +100,11 @@
     cursor: pointer;
     border-bottom: 1px solid var(--text-color);
     user-select: none;
+    background: inherit;
   }
   .modal-item:hover{
-    color: var(--icon-color);
+    background: var(--text-color);
+    color: var(--main-bg-color);
     text-shadow: 0 0 5px var(--contrast-color);
   }
 
